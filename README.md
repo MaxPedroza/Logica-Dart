@@ -7,15 +7,7 @@
 
 Este repositório é o material prático do curso **Lógica Essencial e Programação com Dart**.
 
-Ele foi criado para construir uma ponte sólida entre a **Lógica Formal/Acadêmica** e sua **Aplicação Prática em Dart**, a linguagem por trás do Flutter. Ao final, você terá um raciocínio mais robusto para escrever códigos mais previsíveis e eficientes.
-
-### 🎯 Para Quem é Este Curso?
-
-* **Iniciantes:** Pessoas que precisam de uma introdução estruturada aos tipos de dados e estruturas de controle do Dart.
-* **Desenvolvedores:** Programadores que desejam formalizar seu entendimento sobre operadores lógicos e estruturas de decisão.
-* **Estudantes:** Quem busca ver os conceitos de Lógica em ação, longe de apenas exercícios de papel.
-
----
+Ele foi criado para construir uma ponte sólida entre a **Lógica Formal/Acadêmica** e sua **Aplicação Prática em Dart**, a linguagem por trás do Flutter. 
 
 ## 🗺️ Roteiro e Estrutura do Repositório
 
