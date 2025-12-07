@@ -35,26 +35,35 @@ void main() {
     
     int numero1 = 10;
     int numero2 = 20;
+
+    print("numero1: $numero1");
+    print("numero2: $numero2");
     
     // Igualdade (==)
+    print('gualdade (==)');
     print("numero1 == numero2: ${numero1 == numero2}");  // false
     print("numero1 == 10: ${numero1 == 10}");            // true
     
     // Desigualdade (!=)
+    print('Desigualdade (!=)');
     print("numero1 != numero2: ${numero1 != numero2}");  // true
     
     // Maior que (>)
+    print('Maior que (>)');
     print("numero1 > numero2: ${numero1 > numero2}");    // false
     print("numero2 > numero1: ${numero2 > numero1}");    // true
     
     // Menor que (<)
+    print('Menor que (<)');    
     print("numero1 < numero2: ${numero1 < numero2}");    // true
     
     // Maior ou igual (>=)
+    print('Maior ou igual (>=)');
     print("numero1 >= 10: ${numero1 >= 10}");            // true
     print("numero1 >= numero2: ${numero1 >= numero2}");  // false
     
     // Menor ou igual (<=)
+    print('Menor ou igual (<=)');
     print("numero1 <= numero2: ${numero1 <= numero2}");  // true
 
     // ========== COMPARAÇÃO COM STRINGS ==========
@@ -65,6 +74,11 @@ void main() {
     String nome2 = "Maria";
     String nome3 = "João";
     
+    print("nome1: $nome1");
+    print("nome2: $nome2");
+    print("nome3: $nome3\n");
+
+  print("==: igualdade e !=: desigualdade\n");
     print("nome1 == nome2: ${nome1 == nome2}");  // false
     print("nome1 == nome3: ${nome1 == nome3}");  // true
     print("nome1 != nome2: ${nome1 != nome2}");  // true
@@ -78,14 +92,17 @@ void main() {
     bool condicao3 = true;
     
     // Operador AND (&&) - Retorna true se TODOS forem true
+    print("Operador AND (&&) - Retorna true se TODOS forem true");
     print("condicao1 && condicao3: ${condicao1 && condicao3}");  // true
-    print("condicao1 && condicao2: ${condicao1 && condicao2}");  // false
+    print("condicao1 && condicao2: ${condicao1 && condicao2}\n");  // false
     
     // Operador OR (||) - Retorna true se ALGUM for true
+    print("Operador OR (||) - Retorna true se ALGUM for true");
     print("condicao1 || condicao2: ${condicao1 || condicao2}");  // true
-    print("condicao2 || condicao2: ${condicao2 || condicao2}");  // false
+    print("condicao2 || condicao2: ${condicao2 || condicao2}\n");  // false
     
     // Operador NOT (!) - Inverte o valor booleano
+    print("Operador NOT (!) - Inverte o valor booleano"); 
     print("!condicao1: ${!condicao1}");  // false
     print("!condicao2: ${!condicao2}");  // true
 
@@ -96,18 +113,25 @@ void main() {
     int idade = 25;
     bool temCarteira = true;
     bool comidadista = false;
-    
+
+    print("Idade: $idade");
+    print("Tem carteira: $temCarteira");
+    print("Comidadista: $comidadista\n");
+        
     // AND: Pode dirigir se tem idade >= 18 E tem carteira
+    print("AND: Pode dirigir se tem idade >= 18 E tem carteira");
     bool podeDirigir = (idade >= 18) && temCarteira;
-    print("Pode dirigir: $podeDirigir");  // true
+    print("Pode dirigir: $podeDirigir\n");  // true
     
     // OR: É candidato se é eleitor OU é maior de idade
+    print("OR: É candidato se é eleitor OU é maior de idade");
     bool ehEleitor = idade >= 16;
     bool ehMaiorIdade = idade >= 18;
     bool ehCandidato = ehEleitor || ehMaiorIdade;
-    print("É candidato: $ehCandidato");  // true
+    print("É candidato: $ehCandidato\n");  // true
     
     // NOT: Verificar se NÃO é comidista
+    print("NOT: Verificar se NÃO é comidista");
     bool podeViajarAoInterior = !comidadista;
     print("Pode viajar ao interior: $podeViajarAoInterior");  // true
 
