@@ -1,7 +1,7 @@
 enum UserType {
   admin,
   customer,
-  empluer,
+  employer,
   driver,
 }
 

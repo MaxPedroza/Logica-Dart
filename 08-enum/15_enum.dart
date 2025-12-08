@@ -5,75 +5,91 @@
 
 // ========== ENUM SIMPLES ==========
 // Define um enum simples com apenas valores
+// Define um enum chamado Cor com as cores básicas
 enum Cor {
-  vermelho,
-  verde,
-  azul,
-  amarelo,
-  preto,
-  branco,
+  vermelho, // Representa a cor vermelha
+  verde,    // Representa a cor verde
+  azul,     // Representa a cor azul
+  amarelo,  // Representa a cor amarela
+  preto,    // Representa a cor preta
+  branco,   // Representa a cor branca
 }
 
+// Define um enum para os dias da semana
 enum DiaSemana {
-  segunda,
-  terca,
-  quarta,
-  quinta,
-  sexta,
-  sabado,
-  domingo,
+  segunda, // Segunda-feira
+  terca,   // Terça-feira
+  quarta,  // Quarta-feira
+  quinta,  // Quinta-feira
+  sexta,   // Sexta-feira
+  sabado,  // Sábado
+  domingo, // Domingo
 }
 
+// Define um enum para os status de um pedido
 enum StatusPedido {
-  pendente,
-  processando,
-  enviado,
-  entregue,
-  cancelado,
+  pendente,    // Pedido criado mas não processado
+  processando, // Pedido em processamento
+  enviado,     // Pedido enviado para entrega
+  entregue,    // Pedido entregue ao cliente
+  cancelado,   // Pedido cancelado
 }
 
+// Define um enum para tamanhos de produtos
 enum Tamanho {
-  pequeno,
-  medio,
-  grande,
-  extraGrande,
+  pequeno,     // Tamanho pequeno
+  medio,       // Tamanho médio
+  grande,      // Tamanho grande
+  extraGrande, // Tamanho extra grande
 }
 
 // ========== ENUM COM MÉTODOS E PROPRIEDADES ==========
 // Enums podem ter métodos e propriedades customizadas
+// Define um enum para níveis de usuário com métodos e propriedades
 enum Nivel {
-  iniciante,
-  intermediario,
-  avancado,
-  expert,
+  iniciante,     // Nível inicial
+  intermediario, // Nível intermediário
+  avancado,      // Nível avançado
+  expert,        // Nível expert
   
-  // Propriedade: retorna o número de pontos necessários para atingir cada nível
+  // O ponto e vírgula é necessário para separar os valores dos membros (métodos/propriedades)
   ;
   
+  // Getter que retorna um inteiro representando os pontos necessários
   int get pontosNecessarios {
+    // Inicia a estrutura de decisão switch baseada na instância atual (this)
     switch (this) {
+      // Verifica se o nível é iniciante
       case Nivel.iniciante:
+        // Retorna 0 se for iniciante
         return 0;
+      // Verifica se o nível é intermediario
       case Nivel.intermediario:
+        // Retorna 100 se for intermediario
         return 100;
+      // Verifica se o nível é avancado
       case Nivel.avancado:
+        // Retorna 500 se for avancado
         return 500;
+      // Verifica se o nível é expert
       case Nivel.expert:
+        // Retorna 1000 se for expert
         return 1000;
     }
   }
   
-  // Método: retorna uma descrição do nível
+  // Getter que retorna uma descrição textual do nível
   String get descricao {
+    // Avalia qual é o nível atual
     switch (this) {
       case Nivel.iniciante:
-        return "Você está começando";
+        return "Você está começando"; // Descrição para iniciante
       case Nivel.intermediario:
-        return "Você tem experiência básica";
+        return "Você tem experiência básica"; // Descrição para intermediário
       case Nivel.avancado:
-        return "Você é avançado";
+        return "Você é avançado"; // Descrição para avançado
       case Nivel.expert:
-        return "Você é um expert";
+        return "Você é um expert"; // Descrição para expert
     }
   }
 }
@@ -83,14 +99,14 @@ void main() {
   
   print("========== USANDO ENUMS SIMPLES ==========\n");
   
-  // Acessar valores do enum
-  Cor corFavorita = Cor.azul;
+  // Acessar valores do enum diretamente
+  Cor corFavorita = Cor.azul; // Atribui o valor azul do enum Cor
   print("Cor favorita: $corFavorita");  // Imprime: Cor.azul
   
-  // Acessar apenas o nome (sem o prefixo do enum)
+  // Acessar apenas o nome do valor (sem o prefixo do enum)
   print("Apenas o nome: ${corFavorita.name}");  // Imprime: azul
   
-  // Acessar o índice (posição na definição do enum)
+  // Acessar o índice (posição numérica na definição do enum, começando em 0)
   print("Índice: ${corFavorita.index}");  // Imprime: 2 (terceiro valor)
 
   // ========== ITERANDO SOBRE VALORES DO ENUM ==========
@@ -98,12 +114,16 @@ void main() {
   print("\n========== ITERANDO SOBRE VALORES DO ENUM ==========\n");
   
   print("Todas as cores:");
+  // Cor.values retorna uma lista com todos os valores do enum
   for (Cor cor in Cor.values) {
+    // Imprime cada cor e seu índice
     print("  - $cor (índice: ${cor.index})");
   }
   
   print("\nTodos os dias da semana:");
+  // Itera sobre todos os dias da semana
   for (DiaSemana dia in DiaSemana.values) {
+    // Imprime apenas o nome do dia
     print("  - ${dia.name}");
   }
 
@@ -111,54 +131,61 @@ void main() {
   
   print("\n========== COMPARANDO VALORES DE ENUM ==========\n");
   
-  Cor cor1 = Cor.vermelho;
-  Cor cor2 = Cor.vermelho;
-  Cor cor3 = Cor.azul;
+  Cor cor1 = Cor.vermelho; // Define cor1 como vermelho
+  Cor cor2 = Cor.vermelho; // Define cor2 como vermelho
+  Cor cor3 = Cor.azul;     // Define cor3 como azul
   
+  // Compara se cor1 é igual a cor2 (deve ser true)
   print("cor1 == cor2: ${cor1 == cor2}");  // true
+  // Compara se cor1 é igual a cor3 (deve ser false)
   print("cor1 == cor3: ${cor1 == cor3}");  // false
+  // Compara se cor1 é diferente de cor3 (deve ser true)
   print("cor1 != cor3: ${cor1 != cor3}");  // true
 
   // ========== USANDO SWITCH COM ENUM ==========
   
   print("\n========== USANDO SWITCH COM ENUM ==========\n");
   
-  DiaSemana dia = DiaSemana.sexta;
+  DiaSemana dia = DiaSemana.sexta; // Define o dia como sexta
   
+  // Usa switch para verificar o valor do enum
   switch (dia) {
+    // Agrupa casos para dias úteis (segunda a quinta)
     case DiaSemana.segunda:
     case DiaSemana.terca:
     case DiaSemana.quarta:
     case DiaSemana.quinta:
       print("É dia de semana");
-      break;
+      break; // Sai do switch
+    // Caso específico para sexta-feira
     case DiaSemana.sexta:
       print("É sexta-feira (quase fim de semana)");
-      break;
+      break; // Sai do switch
+    // Agrupa casos para fim de semana (sábado e domingo)
     case DiaSemana.sabado:
     case DiaSemana.domingo:
       print("É fim de semana");
-      break;
+      break; // Sai do switch
   }
 
   // ========== BUSCANDO VALOR DO ENUM POR NOME ==========
   
   print("\n========== BUSCANDO VALOR DO ENUM POR NOME ==========\n");
   
-  // Obter um valor do enum pelo nome
+  // Obter um valor do enum pelo nome usando firstWhere
   String nomeCor = "verde";
   Cor corBuscada = Cor.values.firstWhere(
-    (cor) => cor.name == nomeCor,
-    orElse: () => Cor.preto,  // Valor padrão se não encontrar
+    (cor) => cor.name == nomeCor, // Condição de busca
+    orElse: () => Cor.preto,  // Valor padrão retornado se não encontrar
   );
   print("Cor buscada (nome='$nomeCor'): $corBuscada");
   
-  // Método mais simples com parse
+  // Método mais simples usando byName (lança exceção se não encontrar)
   try {
-    Cor cor = Cor.values.byName('azul');
+    Cor cor = Cor.values.byName('azul'); // Tenta encontrar 'azul'
     print("Cor obtida por byName: $cor");
   } catch (e) {
-    print("Cor não encontrada");
+    print("Cor não encontrada"); // Captura erro se o nome não existir
   }
 
   // ========== ENUM COM CONVERSÃO DE STRING ==========
@@ -167,11 +194,12 @@ void main() {
   
   // Converter enum para string
   StatusPedido status = StatusPedido.enviado;
-  String statusTexto = status.name;
+  String statusTexto = status.name; // Obtém o nome como string ("enviado")
   print("Status como string: '$statusTexto'");
   
   // Converter string para enum
   String statusString = "entregue";
+  // Busca o valor do enum que corresponde à string
   StatusPedido statusParsed = StatusPedido.values.byName(statusString);
   print("Status parseado: $statusParsed");
 
@@ -179,13 +207,16 @@ void main() {
   
   print("\n========== USANDO ENUM EM CONDIÇÕES ==========\n");
   
-  Tamanho tamanhoEscolhido = Tamanho.grande;
+  Tamanho tamanhoEscolhido = Tamanho.grande; // Define tamanho escolhido
   
+  // Verifica se é grande ou extra grande
   if (tamanhoEscolhido == Tamanho.grande || tamanhoEscolhido == Tamanho.extraGrande) {
     print("Tamanho grande: requer mais material");
   } else if (tamanhoEscolhido == Tamanho.pequeno) {
+    // Verifica se é pequeno
     print("Tamanho pequeno: econômico");
   } else {
+    // Caso contrário (médio)
     print("Tamanho médio");
   }
 
@@ -193,15 +224,16 @@ void main() {
   
   print("\n========== ENUM COM PROPRIEDADES E MÉTODOS ==========\n");
   
-  Nivel nivelUsuario = Nivel.intermediario;
+  Nivel nivelUsuario = Nivel.intermediario; // Define nível do usuário
   
-  print("Nível: ${nivelUsuario.name}");
-  print("Descrição: ${nivelUsuario.descricao}");
-  print("Pontos necessários: ${nivelUsuario.pontosNecessarios}");
+  print("Nível: ${nivelUsuario.name}"); // Imprime nome
+  print("Descrição: ${nivelUsuario.descricao}"); // Usa o getter descricao
+  print("Pontos necessários: ${nivelUsuario.pontosNecessarios}"); // Usa o getter pontosNecessarios
   
-  // Iterar sobre todos os níveis
+  // Iterar sobre todos os níveis disponíveis
   print("\nTodos os níveis:");
   for (Nivel nivel in Nivel.values) {
+    // Imprime informações detalhadas de cada nível
     print("  - ${nivel.name}: ${nivel.descricao} (${nivel.pontosNecessarios} pontos)");
   }
 
@@ -209,13 +241,16 @@ void main() {
   
   print("\n========== LISTANDO VALORES DO ENUM ==========\n");
   
+  // Mapeia os valores para seus nomes e converte para lista
   print("Cores disponíveis: ${Cor.values.map((e) => e.name).toList()}");
+  // Mapeia os valores para seus nomes e junta com vírgula
   print("Status de pedido: ${StatusPedido.values.map((e) => e.name).join(', ')}");
 
   // ========== USANDO ENUM EM FUNÇÃO ==========
   
   print("\n========== USANDO ENUM EM FUNÇÃO ==========\n");
   
+  // Chama função passando valores do enum
   descrevePedido(StatusPedido.processando);
   descrevePedido(StatusPedido.entregue);
   descrevePedido(StatusPedido.cancelado);
@@ -225,14 +260,17 @@ void main() {
   print("\n========== VALIDANDO VALORES DE ENUM ==========\n");
   
   String cor = "vermelho";
+  // Verifica se existe alguma cor com esse nome
   bool corValida = Cor.values.any((c) => c.name == cor);
   print("Cor '$cor' é válida: $corValida");
   
   String dia = "terca";
+  // Verifica se existe algum dia com esse nome
   bool diaValido = DiaSemana.values.any((d) => d.name == dia);
   print("Dia '$dia' é válido: $diaValido");
   
-  String diaInvalido = "segunda-feira";
+  String diaInvalido = "segunda-feira"; // Nome incorreto (deveria ser 'segunda')
+  // Verifica se existe algum dia com esse nome
   bool diaInvalidoCheck = DiaSemana.values.any((d) => d.name == diaInvalido);
   print("Dia '$diaInvalido' é válido: $diaInvalidoCheck");
 
@@ -240,6 +278,7 @@ void main() {
   
   print("\n========== CONTAGEM DE VALORES DO ENUM ==========\n");
   
+  // Obtém a quantidade de valores em cada enum
   int quantidadeCores = Cor.values.length;
   int quantidadeDias = DiaSemana.values.length;
   int quantidadeNiveis = Nivel.values.length;
@@ -252,7 +291,7 @@ void main() {
   
   print("\n========== ENUM PARA MAPEAMENTO DE VALORES ==========\n");
   
-  // Usar enum como chave em mapa
+  // Cria um mapa onde a chave é o enum e o valor é uma string
   Map<StatusPedido, String> mensagens = {
     StatusPedido.pendente: "Seu pedido está pendente",
     StatusPedido.processando: "Seu pedido está sendo processado",
@@ -262,12 +301,14 @@ void main() {
   };
   
   StatusPedido statusAtual = StatusPedido.enviado;
+  // Acessa o mapa usando o valor do enum como chave
   print("Mensagem para $statusAtual: ${mensagens[statusAtual]}");
 
   // ========== EXEMPLO PRÁTICO: SISTEMA DE PERMISSÕES ==========
   
   print("\n========== EXEMPLO PRÁTICO: SISTEMA DE PERMISSÕES ==========\n");
   
+  // Testa permissões para diferentes níveis
   verificaPermissao(Nivel.iniciante);
   verificaPermissao(Nivel.expert);
 
@@ -275,6 +316,7 @@ void main() {
   
   print("\n========== EXEMPLO PRÁTICO: TRADUÇÃO COM ENUM ==========\n");
   
+  // Itera sobre as cores e traduz cada uma
   for (Cor cor in Cor.values) {
     String traducao = traduzCor(cor);
     print("$cor = $traducao");
@@ -284,20 +326,20 @@ void main() {
   
   print("\n========== BOAS PRÁTICAS ==========\n");
   
-  // ✓ BOM: Usar enum para valores predefinidos
+  // ✓ BOM: Usar enum para valores predefinidos em vez de strings mágicas
   StatusPedido statusBom = StatusPedido.entregue;
   print("✓ Usando enum para status bem definido");
   
-  // ✓ BOM: Validar antes de usar
+  // ✓ BOM: Validar se uma string corresponde a um valor do enum antes de usar
   String input = "processando";
   if (StatusPedido.values.any((s) => s.name == input)) {
     print("✓ Input '$input' é válido");
   }
   
-  // ✓ BOM: Usar switch para todas as cases do enum
+  // ✓ BOM: Usar switch para tratar todos os casos do enum (exaustividade)
   demonstraSwitch(Tamanho.pequeno);
   
-  // ✓ BOM: Dar nomes significativos aos valores
+  // ✓ BOM: Dar nomes significativos e claros aos valores do enum
   print("✓ Nomes claros: pendente, processando, enviado");
   
   print("\nBoas práticas aplicadas ao código acima!");
@@ -305,7 +347,7 @@ void main() {
 
 // ========== FUNÇÕES DE SUPORTE ==========
 
-/// Descreve o status de um pedido
+/// Função que descreve o status de um pedido usando switch
 void descrevePedido(StatusPedido status) {
   switch (status) {
     case StatusPedido.pendente:
@@ -321,7 +363,7 @@ void descrevePedido(StatusPedido status) {
   }
 }
 
-/// Verifica permissões baseado no nível
+/// Função que verifica permissões baseado no nível do usuário
 void verificaPermissao(Nivel nivel) {
   switch (nivel) {
     case Nivel.iniciante:
@@ -335,7 +377,7 @@ void verificaPermissao(Nivel nivel) {
   }
 }
 
-/// Traduz a cor para português
+/// Função que traduz o nome da cor do enum para português (capitalizado)
 String traduzCor(Cor cor) {
   switch (cor) {
     case Cor.vermelho:
@@ -353,7 +395,7 @@ String traduzCor(Cor cor) {
   }
 }
 
-/// Demonstra o uso de switch exhaustivo com enum
+/// Função que demonstra o uso de switch exaustivo com enum
 void demonstraSwitch(Tamanho tamanho) {
   switch (tamanho) {
     case Tamanho.pequeno:
