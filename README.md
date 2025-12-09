@@ -8,7 +8,7 @@ Este repositório é o material prático do curso **Lógica Essencial e Programa
 
 Ele foi criado para construir uma ponte sólida entre a **Lógica Formal/Acadêmica** e sua **Aplicação Prática em Dart**, a linguagem por trás do Flutter.
 
-> 💡 **Conteudo do curso:**
+> 💡 **Conteúdo do curso:**
 >
 > - ✅ Conceitos fundamentais de lógica proposicional
 > - ✅ Estruturas de dados e tipos em Dart
