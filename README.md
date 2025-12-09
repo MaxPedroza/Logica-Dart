@@ -29,7 +29,7 @@ Estas pastas cobrem os tipos de dados e conceitos básicos que formam as "premis
 
 | # | Módulo | Tópico | Descrição Rápida | Acesse |
 | :---: | :--- | :--- | :--- | :--- |
-| 1️⃣ | `01-helloWorld` | 👋 Sintaxe Inicial | O ponto de partida de qualquer argumento. | [📖 Explorar](01-helloWorld/) |
+| 1️⃣ | `01-helloWorld` | 👋 Sintaxe Inicial | O ponto de partida de qualquer argumento. | [📖 Explorar](01-helloWorld/01_introducao_dart.md) |
 | 2️⃣ | `02-variable` | 📝 **Variáveis e Tipos** | A definição de termos e entidades. | [📖 Detalhes](02-variable/02_variable.md) |
 | 3️⃣ | `03-bool` | ✅ **Booleano** | O fundamento da Lógica: Verdadeiro ou Falso. | [📖 Detalhes](03-bool/03_bool.md) |
 | 4️⃣ | `04-Int` | 🔢 **Números Inteiros** | Operações, tipos e conversões. | [📖 Detalhes](04-Int/04_int.md) |
