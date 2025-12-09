@@ -37,7 +37,7 @@ Estas pastas cobrem os tipos de dados e conceitos básicos que formam as "premis
 | 6️⃣ | `06-duration` | ⏱️ **Duração** | Lógica de Intervalos de Tempo. | [📖 Explorar](06-duration/) |
 | 7️⃣ | `07-datetime` | 📅 **Data e Hora** | Lógica de Sequência Temporal. | [📖 Explorar](07-datetime/) |
 | 8️⃣ | `08-enum` | 🏷️ **Enumerações** | Lógica de Conjuntos Fixos e Exclusivos. | [📖 Explorar](08-enum/) |
-| 9️⃣ | `09-string` | 📄 **Strings** | Manipulação de textos e interpolação. | [📖 Explorar](09-string/) |
+| 9️⃣ | `09-string` | 📄 **Strings** | Manipulação de textos e interpolação. | [📖 Detalhes](09-string/09_string.md) |
 
 ---
 
@@ -102,6 +102,10 @@ Pasta do Módulo/
 Click nos links das tabelas acima para acessar documentação detalhada de cada tópico:
 
 - **[Variáveis](02-variable/02_variable.md)** - Entenda tipos, modificadores e boas práticas
+- **[Booleano](03-bool/03_bool.md)** - Verdadeiro/Falso e operações lógicas
+- **[Números Inteiros](04-Int/04_int.md)** - Operações, conversões e tipos
+- **[Números Decimais](05-double/05_double.md)** - Ponto flutuante e precisão
+- **[Strings](09-string/09_string.md)** - Manipulação de texto, interpolação e formatação
 - **[Lógica E/OU](logica_and.dart)** - Operadores booleanos fundamentais
 - **[Condicional](condicional.dart)** - Estruturas if/else
 - **[Switch/Case](switch_case.dart)** - Decisões múltiplas
