@@ -231,6 +231,15 @@ void main() {
   print("Exercício 8: $exercicio8mensagem");
   print("");
 
+//=========AULA09: ISEMPTY ==============
+  print("========AULA09: ISEMPTY =============\n");
+
+  final textoVazio = "";
+  print(textoVazio.isEmpty ); // true
+
+  final textoComConteudo = "Max Pedroza";
+  print(textoComConteudo.isEmpty ); // false
+
   //========EXERCÍCIOS E DESAFIOS FINAIS==========
   print("========EXERCÍCIOS E DESAFIOS FINAIS==========\n");
   
