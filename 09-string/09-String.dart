@@ -231,59 +231,6 @@ void main() {
   print("Exercício 8: $exercicio8mensagem");
   print("");
 
-<<<<<<< HEAD
-//=========AULA09: ISEMPTY ==============
-  print("========AULA09: ISEMPTY =============\n");
-
-  final textoVazio = "";
-  print(textoVazio.isEmpty ); // true
-
-  final textoComConteudo = "Max Pedroza";
-  print(textoComConteudo.isEmpty ); // false
-
-  //========EXERCÍCIOS E DESAFIOS FINAIS==========
-  print("========EXERCÍCIOS E DESAFIOS FINAIS==========\n");
-  
-  // Desafio 1: Crie uma string com nome completo e extraia cada parte
-  print("Desafio 1 - Extrair partes do nome:");
-  String nomeDesafio1 = "Ana Paula Santos";
-  List<String> nomePartes = nomeDesafio1.split(' ');
-  print("  Nome completo: $nomeDesafio1");
-  print("  Primeira parte: ${nomePartes[0]}");
-  print("  Segunda parte: ${nomePartes[1]}");
-  print("  Terceira parte: ${nomePartes[2]}");
-  print("");
-  
-  // Desafio 2: Use interpolação e concatenação juntas
-  print("Desafio 2 - Combinando técnicas:");
-  String primeiraParteDesafio2 = "O número ";
-  int numeroDesafio2 = 42;
-  String segundaParteDesafio2 = " é especial porque $numeroDesafio2 dividido por 2 é " + (numeroDesafio2 ~/ 2).toString();
-  print("  $primeiraParteDesafio2$numeroDesafio2$segundaParteDesafio2");
-  print("");
-  
-  // Desafio 3: Verificar tamanho de string e contar caracteres
-  print("Desafio 3 - Análise de string:");
-  String stringDesafio3 = "FLUTTER";
-  print("  String: '$stringDesafio3'");
-  print("  Tamanho: ${stringDesafio3.length}");
-  print("  Primeira metade: ${stringDesafio3.substring(0, stringDesafio3.length ~/ 2)}");
-  print("  Segunda metade: ${stringDesafio3.substring(stringDesafio3.length ~/ 2)}");
-  print("");
-  
-  // Desafio 4: Formatar dados com interpolação
-  print("Desafio 4 - Formatação de dados:");
-  String produtoDesafio4 = "Notebook";
-  double preco = 3500.50;
-  int quantidade = 2;
-  double total = preco * quantidade;
-  print("  Produto: $produtoDesafio4");
-  print("  Preço unitário: R\$ $preco");
-  print("  Quantidade: $quantidade");
-  print("  Total: R\$ $total");
-  print("");
-}
-=======
 //======AULA09: ISEMPTY============================
   print("========AULA09: ISEMPTY - VERIFICAR STRING VAZIA==========\n");
   final textoVazio = "";
@@ -360,4 +307,3 @@ void main() {
   print("Exemplo 1 - textoSemEspacosFim: '$textoSemEspacosFim'"); // "   Olá, Mundo!"
 
 }
->>>>>>> 14b67813aa130e632adc84ce539955e172d5d687
