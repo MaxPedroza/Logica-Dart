@@ -45,14 +45,14 @@ Estas pastas cobrem os tipos de dados e conceitos básicos que formam as "premis
 
 Aqui, a lógica formal é traduzida diretamente para as decisões que o seu código toma:
 
-| Operador Lógico | Conceito Formal | Implementação em Dart | Arquivo | Descrição |
-| :---: | :--- | :--- | :--- | :--- |
-| 🔗 **E** | Conjunção ($\land$) | Operador `&&` | [logica_and.dart](logica_and.dart) | Verdadeiro quando **ambas** condições são verdadeiras. |
-| 🔀 **OU** | Disjunção ($\lor$) | Operador `\|\|` | [logica_or.dart](logica_or.dart) | Verdadeiro quando **uma ou mais** condições são verdadeiras. |
-| ➡️ **SE** | Implicação ($\to$) | Estrutura `if/else` | [condicional.dart](condicional.dart) | Executa bloco **se** a condição for verdadeira. |
-| ⚡ **SE Curto** | Condicional Ternária | Expressão `? :` | [ternario.dart](ternario.dart) | Versão compacta de `if/else` para atribuições. |
-| 🎯 **Múltiplas** | Decisão Múltipla | Estrutura `switch` | [switch_case.dart](switch_case.dart) | Escolhe entre **várias opções** baseado em um valor. |
-| 🔬 **Profundidade** | Lógica Avançada | Implementações Custom | [logic/](logic/) | Conceitos formais avançados e combinações complexas. |
+|   Operador Lógico   | Conceito Formal      | Implementação em Dart | Arquivo                              | Descrição                                                    |
+| :-----------------: | :------------------- | :-------------------- | :----------------------------------- | :----------------------------------------------------------- |
+|      🔗 **E**       | Conjunção ($\land$)  | Operador `&&`         | [logica_and.dart](logica_and.dart)   | Verdadeiro quando **ambas** condições são verdadeiras.       |
+|      🔀 **OU**      | Disjunção ($\lor$)   | Operador `\|\|`       | [logica_or.dart](logica_or.dart)     | Verdadeiro quando **uma ou mais** condições são verdadeiras. |
+|      ➡️ **SE**      | Implicação ($\to$)   | Estrutura `if/else`   | [condicional.dart](condicional.dart) | Executa bloco **se** a condição for verdadeira.              |
+|   ⚡ **SE Curto**   | Condicional Ternária | Expressão `? :`       | [ternario.dart](ternario.dart)       | Versão compacta de `if/else` para atribuições.               |
+|  🎯 **Múltiplas**   | Decisão Múltipla     | Estrutura `switch`    | [switch_case.dart](switch_case.dart) | Escolhe entre **várias opções** baseado em um valor.         |
+| 🔬 **Profundidade** | Lógica Avançada      | Implementações Custom | [logic/](logic/)                     | Conceitos formais avançados e combinações complexas.         |
 
 ---
 
