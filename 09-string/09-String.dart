@@ -231,6 +231,7 @@ void main() {
   print("Exercício 8: $exercicio8mensagem");
   print("");
 
+<<<<<<< HEAD
 //=========AULA09: ISEMPTY ==============
   print("========AULA09: ISEMPTY =============\n");
 
@@ -282,3 +283,81 @@ void main() {
   print("  Total: R\$ $total");
   print("");
 }
+=======
+//======AULA09: ISEMPTY============================
+  print("========AULA09: ISEMPTY - VERIFICAR STRING VAZIA==========\n");
+  final textoVazio = "";
+  print("Exemplo 1 - textoVazio.isEmpty: ${textoVazio.isEmpty}"); // true
+  final textoComConteudo = "Dart é legal";
+  print("Exemplo 2 - textoComConteudo.isEmpty: ${textoComConteudo.isEmpty}"); // false
+
+  String? textoNulo;
+  print("Exemplo 3 - textoNulo?.isEmpty: ${textoNulo?.isEmpty}"); // null 
+
+  print("textoVazio.isNotEmpty: ${textoVazio?.isNotEmpty ?? false}"); // false
+  print("textoComConteudo.isNotEmpty: ${textoComConteudo?.isNotEmpty}"); // true
+
+
+//====AULA10: ISNOTEMPTY==========================
+  print("\n========AULA10: ISNOTEMPTY - VERIFICAR STRING NÃO VAZIA==========\n");
+  final textoNaoVazio2 = "Max Pedroza";
+  print("Exemplo 1 - textoNaoVazio2.isNotEmpty: ${textoNaoVazio2.isNotEmpty}"); // true
+
+//========AULA11: CONTAINS==========================
+  print("\n========AULA11: CONTAINS - VERIFICAR SE STRING CONTEM UM DETERMINADO TEXTO==========\n");
+  final frase = "Dart é uma linguagem de programação incrível";
+  print("Exemplo 1 - frase.contains('Dart'): ${frase.contains('Dart')}"); // true
+  print("Exemplo 2 - frase.contains('Java'): ${frase.contains('Java')}"); // false
+
+//========AULA12: REPLACE ALL==========================
+  print("\n========AULA12: REPLACE ALL - SUBSTITUIR TODAS AS OCORRÊNCIAS DE UM TEXTO NA STRING==========\n");
+  final textoOriginal = "Eu gosto de maçã. A maçã é minha fruta favorita.";
+  final textoModificado = textoOriginal.replaceAll("maçã", "banana");
+  print("Exemplo 1 - textoModificado: $textoModificado"); // "Eu gosto de banana. A banana é minha fruta favorita."
+
+//===========AULA13: REPLACE FIRST==========================
+  print("\n========AULA13: REPLACE FIRST - SUBSTITUIR A PRIMEIRA OCORRÊNCIA DE UM TEXTO NA STRING==========\n");
+  final textoOriginal2 = "Eu gosto de maçã. A maçã é minha fruta favorita.";
+  final textoModificado2 = textoOriginal2.replaceFirst("maçã", "banana");
+  print("Exemplo 1 - textoModificado2: $textoModificado2"); // "Eu gosto de banana. A maçã é minha fruta favorita."
+
+  //========AULA14: REPLACE RANGE==========================
+  print("\n========AULA14: REPLACE RANGE - SUBSTITUIR UMA FAIXA DE ÍNDICES NA STRING==========\n");
+  //                      0123456789101112
+  final textoOriginal3 = "Olá, mundo!";
+  // Índices 7 a 12 correspondem a "mundo"
+  final textoModificado3 = textoOriginal3.replaceRange(7, 12, "Dart");
+  print("Exemplo 1 - textoModificado3: $textoModificado3"); // "Olá, Dart!"
+
+  //========ULA15: STARTSWITH==========================
+  print("\n========AULA15: STARTSWITH - VERIFICAR SE A STRING COMEÇA COM UM DETERMINADO TEXTO==========\n");
+  final saudacao = "Olá, seja bem-vindo!";
+  print("Exemplo 1 - saudacao.startsWith('Olá'): ${saudacao.startsWith('Olá')}"); // true
+  print("Exemplo 2 - saudacao.startsWith('Seja'): ${saudacao.startsWith('Seja')}"); // false
+
+  //========ULA16:ENDSWITH==========================
+  print("\n========AULA16: ENDSWITH - VERIFICAR SE A STRING TERMINA COM UM DETERMINADO TEXTO==========\n");
+  final despedida = "Até logo, nos vemos em breve!";
+  print("Exemplo 1 - despedida.endsWith('breve!'): ${despedida.endsWith('breve!')}"); // true
+  print("Exemplo 2 - despedida.endsWith('olá'): ${despedida.endsWith('olá')}"); // false
+
+  //========AULA17:TRIM==========================
+  print("\n========AULA17: TRIM - REMOVER ESPAÇOS EM BRANCO NO INÍCIO E FIM DA STRING==========\n");
+  final textoComEspacos = "   Olá, Mundo!   ";
+  final textoSemEspacos = textoComEspacos.trim();
+  print("Exemplo 1 - textoSemEspacos: '$textoSemEspacos'"); // "Olá, Mundo!"
+
+  //TRIMLEFT==========================
+  print("\n========AULA18: TRIMLEFT - REMOVER ESPAÇOS EM BRANCO NO INÍCIO DA STRING==========\n");
+  final textoComEspacos2 = "   Olá, Mundo!   ";
+  final textoSemEspacosInicio = textoComEspacos2.trimLeft();
+  print("Exemplo 1 - textoSemEspacosInicio: '$textoSemEspacosInicio'"); // "Olá, Mundo!   "
+
+  //TRIMRIGHT==========================
+  print("\n========AULA19: TRIMRIGHT - REMOVER ESPAÇOS EM BRANCO NO FIM DA STRING==========\n");
+  final textoComEspacos3 = "   Olá, Mundo!   ";
+  final textoSemEspacosFim = textoComEspacos3.trimRight();
+  print("Exemplo 1 - textoSemEspacosFim: '$textoSemEspacosFim'"); // "   Olá, Mundo!"
+
+}
+>>>>>>> 14b67813aa130e632adc84ce539955e172d5d687
