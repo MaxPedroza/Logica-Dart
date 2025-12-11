@@ -2,6 +2,34 @@
 
 > Uma **string** é uma sequência de caracteres imutável. Em Dart, strings são usadas para representar texto e são fundamentais para qualquer aplicação.
 
+## 📚 Documentação por Aula
+
+> Acesse os arquivos de documentação detalhada para cada tema:
+
+| # | Tema | Arquivo |
+|---|------|---------|
+| 1 | Introdução a Strings | [aula01-introducao.md](aula01-introducao.md) |
+| 2 | Tipos de Declaração | [aula02-tipos-declaracao.md](aula02-tipos-declaracao.md) |
+| 3 | Boas Práticas | [aula03-boas-praticas.md](aula03-boas-praticas.md) |
+| 4 | Concatenação | [aula04-concatenacao.md](aula04-concatenacao.md) |
+| 5 | Substring | [aula05-substring.md](aula05-substring.md) |
+| 6 | Split | [aula06-split.md](aula06-split.md) |
+| 7 | Length | [aula07-length.md](aula07-length.md) |
+| 8 | Interpolação | [aula08-interpolacao.md](aula08-interpolacao.md) |
+| 9 | isEmpty | [aula09-isempty.md](aula09-isempty.md) |
+| 10 | isNotEmpty | [aula10-isnotempty.md](aula10-isnotempty.md) |
+| 11 | contains | [aula11-contains.md](aula11-contains.md) |
+| 12 | replaceAll | [aula12-replaceall.md](aula12-replaceall.md) |
+| 13 | replaceFirst | [aula13-replacefirst.md](aula13-replacefirst.md) |
+| 14 | replaceRange | [aula14-replacerange.md](aula14-replacerange.md) |
+| 15 | startsWith | [aula15-startswith.md](aula15-startswith.md) |
+| 16 | endsWith | [aula16-endswith.md](aula16-endswith.md) |
+| 17 | trim | [aula17-trim.md](aula17-trim.md) |
+| 18 | trimLeft | [aula18-trimleft.md](aula18-trimleft.md) |
+| 19 | trimRight | [aula19-trimright.md](aula19-trimright.md) |
+
+---
+
 ## Índice
 
 - [1. Introdução](#1-introdução)
