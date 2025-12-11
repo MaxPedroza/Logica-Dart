@@ -4,6 +4,28 @@ As listas (`List`) são a estrutura de dados mais comum em Dart. Elas representa
 
 ---
 
+## 📚 Documentação por Aula
+
+> Acesse os arquivos de documentação detalhada para cada tema:
+
+| # | Tema | Arquivo |
+|---|------|---------|
+| 1 | Declaração de Listas | [aula01-declaracao.md](aula01-declaracao.md) |
+| 2 | add - Adicionar um Item | [aula02-add.md](aula02-add.md) |
+| 3 | addAll - Adicionar Múltiplos | [aula03-addall.md](aula03-addall.md) |
+| 4 | remove - Remover por Valor | [aula04-remove.md](aula04-remove.md) |
+| 5 | removeAt - Remover por Índice | [aula05-removeat.md](aula05-removeat.md) |
+| 6 | clear - Limpar Lista | [aula06-clear.md](aula06-clear.md) |
+| 7 | contains - Verificar Existência | [aula07-contains.md](aula07-contains.md) |
+| 8 | elementAt - Acessar por Índice | [aula08-elementat.md](aula08-elementat.md) |
+| 9 | firstWhere - Encontrar com Condição | [aula09-firstwhere.md](aula09-firstwhere.md) |
+| 10 | forEach - Iterar Elementos | [aula10-foreach.md](aula10-foreach.md) |
+| 11 | indexOf - Encontrar Posição | [aula11-indexof.md](aula11-indexof.md) |
+| 12 | indexWhere - Encontrar Índice com Condição | [aula12-indexwhere.md](aula12-indexwhere.md) |
+| 13 | insert e insertAll - Inserir em Posição | [aula13-insert.md](aula13-insert.md) |
+
+---
+
 ## Índice
 
 1. [Introdução](#introdução)
