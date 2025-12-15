@@ -241,8 +241,8 @@ void main() {
   String? textoNulo;
   print("Exemplo 3 - textoNulo?.isEmpty: ${textoNulo?.isEmpty}"); // null 
 
-  print("textoVazio.isNotEmpty: ${textoVazio?.isNotEmpty ?? false}"); // false
-  print("textoComConteudo.isNotEmpty: ${textoComConteudo?.isNotEmpty}"); // true
+  print("textoVazio.isNotEmpty: ${textoVazio.isNotEmpty ?? false}"); // false
+  print("textoComConteudo.isNotEmpty: ${textoComConteudo.isNotEmpty}"); // true
 
 
 //====AULA10: ISNOTEMPTY==========================
