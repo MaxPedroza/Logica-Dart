@@ -45,13 +45,13 @@ Estas pastas cobrem os tipos de dados e conceitos básicos que formam as "premis
 
 Aqui, a lógica formal é traduzida diretamente para as decisões que o seu código toma:
 
-|   Operador Lógico   | Conceito Formal      | Implementação em Dart | Arquivo                              | Descrição                                                    |
-| :-----------------: | :------------------- | :-------------------- | :----------------------------------- | :----------------------------------------------------------- |
-|      🔗 **E**       | Conjunção ($\land$)  | Operador `&&`         | [logica_and.dart](logica_and.dart)   | Verdadeiro quando **ambas** condições são verdadeiras.       |
-|      🔀 **OU**      | Disjunção ($\lor$)   | Operador `\|\|`       | [logica_or.dart](logica_or.dart)     | Verdadeiro quando **uma ou mais** condições são verdadeiras. |
-|      ➡️ **SE**      | Implicação ($\to$)   | Estrutura `if/else`   | [condicional.dart](condicional.dart) | Executa bloco **se** a condição for verdadeira.              |
-|   ⚡ **SE Curto**   | Condicional Ternária | Expressão `? :`       | [ternario.dart](ternario.dart)       | Versão compacta de `if/else` para atribuições.               |
-|  🎯 **Múltiplas**   | Decisão Múltipla     | Estrutura `switch`    | [switch_case.dart](switch_case.dart) | Escolhe entre **várias opções** baseado em um valor.         |
+|   Operador Lógico   | Conceito Formal      | Implementação em Dart | Arquivo                                          | Descrição                                                    |
+| :-----------------: | :------------------- | :-------------------- | :----------------------------------------------- | :----------------------------------------------------------- |
+|      🔗 **E**       | Conjunção ($\land$)  | Operador `&&`         | [logica_and.md](02-OPERADORES-DE-LOGICA/logica_and.md) | 📖 Verdadeiro quando **ambas** condições são verdadeiras.       |
+|      🔀 **OU**      | Disjunção ($\lor$)   | Operador `\|\|`       | [logica_or.md](02-OPERADORES-DE-LOGICA/logica_or.md)   | 📖 Verdadeiro quando **uma ou mais** condições são verdadeiras. |
+|      ➡️ **SE**      | Implicação ($\to$)   | Estrutura `if/else`   | [condicional.md](03-OPERADORES-CONDICIONAIS/condicional.md) | 📖 Executa bloco **se** a condição for verdadeira.              |
+|   ⚡ **SE Curto**   | Condicional Ternária | Expressão `? :`       | [ternario.md](03-OPERADORES-CONDICIONAIS/ternario.md)       | 📖 Versão compacta de `if/else` para atribuições.               |
+|  🎯 **Múltiplas**   | Decisão Múltipla     | Estrutura `switch`    | [switch_case.md](03-OPERADORES-CONDICIONAIS/switch_case.md) | 📖 Escolhe entre **várias opções** baseado em um valor.         |
 | 🔬 **Profundidade** | Lógica Avançada      | Implementações Custom | [logic/](logic/)                     | Conceitos formais avançados e combinações complexas.         |
 
 ---
@@ -62,8 +62,10 @@ Estruturas complexas que dependem de uma lógica interna refinada:
 
 |  #  | Tópico          | Conceito                | Descrição                               | Pasta                             |
 | :-: | :-------------- | :---------------------- | :-------------------------------------- | :-------------------------------- |
-| 📦  | **Funções**     | 🎯 Modularidade         | Regras de escopo, parâmetros e retorno. | [functions/](functions/)          |
-| 📊  | **Listas**      | 🔀 Sequências Ordenadas | Coleções de dados indexados e mutáveis. | [📖 Detalhes](10-list/10_list.md) |
+| 📦  | **Funções**     | 🎯 Modularidade         | Reutilizar código e organizar lógica.   | [📖 Detalhes](04-FUNCOES/function.md) |
+| 🔄  | Funções Síncronas | ⏱️ Execução Sequencial  | Funções bloqueantes e diretas.          | [📖 Detalhes](04-FUNCOES/function-sync.md) |
+| ⚡  | Funções Assíncronas | 🌊 Non-Blocking        | Async/await e Futures.                  | [📖 Detalhes](04-FUNCOES/function_async.md) |
+| 📊  | **Listas**      | 🔀 Sequências Ordenadas | Coleções de dados indexados e mutáveis. | [📖 Detalhes](01-TIPO-DADOS/10-list/10_list.md) |
 | 🎭  | **Conjuntos**   | 🔗 Unicidade            | Coleções sem duplicatas.                | [set/](set/)                      |
 | 🗺️  | **Mapas**       | 🔍 Pares Chave-Valor    | Estrutura de dados associativa.         | [map/](map/)                      |
 | 🔄  | **Loops**       | ⏰ Repetição e Iteração | Estruturas `for`, `while`, `forEach`.   | [loop/](loop/)                    |
@@ -101,16 +103,18 @@ Pasta do Módulo/
 
 Click nos links das tabelas acima para acessar documentação detalhada de cada tópico:
 
-- **[Variáveis](02-variable/02_variable.md)** - Entenda tipos, modificadores e boas práticas
-- **[Booleano](03-bool/03_bool.md)** - Verdadeiro/Falso e operações lógicas
-- **[Números Inteiros](04-Int/04_int.md)** - Operações, conversões e tipos
-- **[Números Decimais](05-double/05_double.md)** - Ponto flutuante e precisão
-- **[Strings](09-string/09_string.md)** - Manipulação de texto, interpolação e formatação
-- **[Lógica E/OU](logica_and.dart)** - Operadores booleanos fundamentais
-- **[Condicional](condicional.dart)** - Estruturas if/else
-- **[Switch/Case](switch_case.dart)** - Decisões múltiplas
-- **[Ternário](ternario.dart)** - Expressões condensadas
-
+- **[Variáveis](01-TIPO-DADOS/02-variable/02_variable.md)** - Entenda tipos, modificadores e boas práticas
+- **[Booleano](01-TIPO-DADOS/03-bool/03_bool.md)** - Verdadeiro/Falso e operações lógicas
+- **[Números Inteiros](01-TIPO-DADOS/04-Int/04_int.md)** - Operações, conversões e tipos
+- **[Números Decimais](01-TIPO-DADOS/05-double/05_double.md)** - Ponto flutuante e precisão
+- **[Strings](01-TIPO-DADOS/09-string/09_string.md)** - Manipulação de texto, interpolação e formatação
+- **[Operador AND (E)](02-OPERADORES-DE-LOGICA/logica_and.md)** - Conjunção lógica com `&&`
+- **[Operador OR (OU)](02-OPERADORES-DE-LOGICA/logica_or.md)** - Disjunção lógica com `||`
+- **[Condicional IF/ELSE](03-OPERADORES-CONDICIONAIS/condicional.md)** 🆕 - Estruturas de decisão
+- **[Switch/Case](03-OPERADORES-CONDICIONAIS/switch_case.md)** 🆕 - Decisões múltiplas
+- **[Ternário (? :)](03-OPERADORES-CONDICIONAIS/ternario.md)** 🆕 - Expressões condensadas- **[Funções](04-FUNCOES/function.md)** 🆕 - Conceitos fundamentais
+- **[Funções Síncronas](04-FUNCOES/function-sync.md)** 🆕 - Execução sequencial
+- **[Funções Assíncronas](04-FUNCOES/function_async.md)** 🆕 - Async/await e Futures
 ---
 
 ## 💻 Requisitos e Como Executar
